@@ -7,7 +7,7 @@ interface SinOption {
   text: string;
 }
 
-const sins = [
+const sins: SinOption[] = [
   { id: 1, text: "Blessing water guns at summer camp" },
   { id: 2, text: "Sneaking extra wine during communion" },
   { id: 3, text: "Using holy water for his houseplants" },
