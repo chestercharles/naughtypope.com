@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Tagesschrift', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -32,19 +32,23 @@ body {
 }
 
 .container {
-  background-color: #f8f7f3;
-  border-radius: 16px;
-  padding: 2.5rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
-  border: 6px solid #ffd700; /* Gold border */
+  background: #f7ecd0 url('/parchment.jpg') center/cover no-repeat;
+  padding: 2.5rem 2rem;
+  max-width: 650px;
+  /* border: 3px solid rgba(80, 60, 20, 0.33); */
+  position: relative;
+  margin: 2.5rem auto;
+  font-family: 'Tagesschrift', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
+
 h1 {
+  font-family: 'Tagesschrift', system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 3.2em;
   line-height: 1.1;
   margin-bottom: 0.5em;
-  color: #800020; /* Papal red */
+  color: #34000d; /* Papal red */
   font-weight: bold;
   text-shadow: 2px 2px 0px rgba(255, 215, 0, 0.3); /* Gold shadow */
 }
@@ -111,22 +115,19 @@ h1 {
 }
 
 @media (prefers-color-scheme: dark) {
-  .container {
-    background-color: #27252a;
-    border-color: #b8860b; /* Darker gold */
+  .container::before {
+    background: radial-gradient(ellipse at center, rgba(40,24,0,0.27) 60%, transparent 100%),
+      linear-gradient(to bottom, rgba(60,40,0,0.18) 0%, transparent 25%, transparent 75%, rgba(60,40,0,0.19) 100%);
   }
-  
   h1 {
-    color: #ff9999; /* Lighter red */
+    color: #5f1b1b;
     text-shadow: 2px 2px 0px rgba(184, 134, 11, 0.3); /* Darker gold shadow */
   }
-  
   .tagline {
-    color: #aaa;
+    color: #693636;
   }
-  
   .sin {
-    color: #ff9999;
+    color: #5f1b1b;
     background-color: rgba(184, 134, 11, 0.1);
   }
 }
