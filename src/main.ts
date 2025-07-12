@@ -132,6 +132,10 @@ const sins: SinOption[] = [
   },
   { id: 111, text: "Creating viral 'Pope Pranks' videos" },
   { id: 112, text: "Using religious texts for impromptu karaoke lyrics" },
+  { id: 113, text: "Wearing a black pope's robe and fighting crime at night" },
+  { id: 114, text: "Using the confessional as a podcast recording booth." },
+  { id: 115, text: "Replacing Vatican pigeons with trained messenger parrots." },
+  { id: 116, text: "Launching a Vatican-approved emoji set." },
 ];
 
 function getRandomSin(): string {
